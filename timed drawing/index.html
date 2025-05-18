@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Timed drawing</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container">
+ <div class="left-stripe"></div>
+ <div class="right-stripe"></div>
+
+ <div class="content">
+ <h1 class="site-title">Timed drawing</h1>
+
+ <div class="timer-container">
+ <div class="timer-label">Оставшееся время:</div>
+ <div id="timer">00:45</div>
+ </div>
+
+ <div class="buttons">
+   <button id="startBtn">Старт</button>
+ <button id="timeBtn">Время</button>
+ </div>
+
+ <div id="imageContainer">
+ <div class="image-placeholder">Изображение появится после старта</div>
+ </div>
+
+ <div class="drawing-area">
+ <div class="left-toolbar">
+ <button id="clearBtn">Очистить</button>
+
+ <canvas id="drawingCanvas"></canvas>
+
+ <div class="brush-controls">
+ <label>Размер кисти:
+ <input type="range" id="brushSize" min="1" max="50" value="5" disabled>
+ </label>
+ <div class="color-palette">
+    <div class="color" data-color="#000000" style="background:#000000;"></div>
+    <div class="color" data-color="#FFFFFF" style="background:#FFFFFF; border:1px solid #ccc;"></div>
+    <div class="color" data-color="#FF0000" style="background:#FF0000;"></div>
+    <div class="color" data-color="#FFA500" style="background:#FFA500;"></div>
+    <div class="color" data-color="#FFFF00" style="background:#FFFF00;"></div>
+    <div class="color" data-color="#008000" style="background:#008000;"></div>
+    <div class="color" data-color="#00FFFF" style="background:#00FFFF;"></div>
+    <div class="color" data-color="#0000FF" style="background:#0000FF;"></div>
+    <div class="color" data-color="#800080" style="background:#800080;"></div>
+    <div class="color" data-color="#FF00FF" style="background:#FF00FF;"></div>
+    <div class="color" data-color="#FFC0CB" style="background:#FFC0CB;"></div>
+    <div class="color" data-color="#964B00" style="background:#964B00;"></div>
+</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
